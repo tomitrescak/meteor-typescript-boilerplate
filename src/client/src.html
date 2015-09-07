@@ -1,0 +1,22 @@
+<head>
+  <title>src</title>
+</head>
+
+<body>
+  {{> HomeLoader }}
+</body>
+
+<template name="HomeLoader">
+  <!-- Handle loading of template, subscriptions ... -->
+  {{> Home homeViewModel }}
+</template>
+
+<template name="Home">
+  <h1>Welcome to {{ dynamicTitle }}!</h1>
+
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+
+  <label>Change Title: </label>
+  <input type="text" id="title">
+</template>
